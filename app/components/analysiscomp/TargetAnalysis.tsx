@@ -7,6 +7,7 @@ import {
   LoaderIcon,
   ExternalLinkIcon,
 } from 'lucide-react'
+import axios from 'axios'
 interface TargetAnalysisProps {
   isActive: boolean
   onBack: () => void
@@ -17,45 +18,31 @@ interface AnalysisResult {
   description: string
   confidence: number
 }
-export const TargetAnalysis: React.FC<TargetAnalysisProps> = ({
-  isActive,
-  onBack,
-}) => {
+export const TargetAnalysis = () => {
   const [targetCompany, setTargetCompany] = useState('')
+  const [competitorCompany, setCompetitorCompany] = useState('')
+
   const [isLoading, setIsLoading] = useState(false)
   const [results, setResults] = useState<AnalysisResult[]>([])
+
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
-    // Simulate API call
-    setTimeout(() => {
-      setResults([
-        {
-          competitor: 'Accenture',
-          relationship: 'Active Partnership',
-          description:
-            'Currently working on digital transformation initiatives',
-          confidence: 95,
-        },
-        {
-          competitor: 'TCS',
-          relationship: 'Recent Contract',
-          description: 'Cloud migration and IT services',
-          confidence: 88,
-        },
-        {
-          competitor: 'Wipro',
-          relationship: 'Past Engagement',
-          description: 'Network infrastructure upgrade project',
-          confidence: 75,
-        },
-      ])
-      setIsLoading(false)
-    }, 2000)
+
+    const resp = await axios.post("/api/getcollabs",{
+      targetCompany,
+      competitorCompany
+    })
+    setIsLoading(false)
+    console.log(resp.data)
+
   }
+
+
   return (
     <motion.section
-      className={`bg-white rounded-xl shadow-lg p-8 ${!isActive && 'opacity-50'}`}
+      className={`bg-white rounded-xl shadow-lg p-8 w-full`}
       initial={{
         opacity: 0,
         y: 20,
@@ -77,20 +64,6 @@ export const TargetAnalysis: React.FC<TargetAnalysisProps> = ({
             Target Company Analysis
           </h2>
         </div>
-        <motion.button
-          onClick={onBack}
-          className="text-gray-600 hover:text-gray-900 flex items-center"
-          whileHover={{
-            scale: 1.05,
-          }}
-          whileTap={{
-            scale: 0.95,
-          }}
-          disabled={!isActive}
-        >
-          <ArrowLeftIcon className="h-5 w-5 mr-1" />
-          Back
-        </motion.button>
       </div>
       <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl">
         <div>
@@ -100,15 +73,24 @@ export const TargetAnalysis: React.FC<TargetAnalysisProps> = ({
           >
             Target Company Name
           </label>
-          <input
-            type="text"
-            id="target"
-            value={targetCompany}
-            onChange={(e) => setTargetCompany(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
-            placeholder="e.g., Virgin Media"
-            disabled={!isActive}
-          />
+          <div className='flex flex-row gap-4'>
+            <input
+              type="text"
+              id="target"
+              value={targetCompany}
+              onChange={(e) => setTargetCompany(e.target.value)}
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
+              placeholder="e.g., Virgin Media"
+            />
+            <input
+              type="text"
+              id="target"
+              value={competitorCompany}
+              onChange={(e) => setCompetitorCompany(e.target.value)}
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
+              placeholder="e.g., Virgin Media"
+            />
+          </div>
         </div>
         <motion.button
           type="submit"
@@ -119,7 +101,7 @@ export const TargetAnalysis: React.FC<TargetAnalysisProps> = ({
           whileTap={{
             scale: 0.98,
           }}
-          disabled={!isActive || isLoading}
+          disabled={isLoading}
         >
           {isLoading ? (
             <LoaderIcon className="h-5 w-5 animate-spin" />

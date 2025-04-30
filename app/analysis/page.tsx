@@ -39,8 +39,8 @@ export default function page()  {
             onComplete={() => setAnalysisStep(2)}
           />
           <TargetAnalysis
-            isActive={analysisStep === 2}
-            onBack={() => setAnalysisStep(1)}
+            // isActive={analysisStep === 2}
+            // onBack={() => setAnalysisStep(1)}
           />
         </div>
       </div>
