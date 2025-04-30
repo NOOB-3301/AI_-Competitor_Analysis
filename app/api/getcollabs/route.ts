@@ -1,6 +1,5 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-import fs from 'fs';
 type Result = {
     title: string;
     link: string;
