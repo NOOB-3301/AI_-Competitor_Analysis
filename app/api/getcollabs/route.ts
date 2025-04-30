@@ -14,14 +14,14 @@ export async function POST(req: Request) {
 
     const queryCollabs = [
         `${targetCompany} ${competitorCompany} collaboration`,
-        `${targetCompany} ${competitorCompany} partnership`,
-        `${targetCompany} ${competitorCompany} joint venture`,
-        `${targetCompany} ${competitorCompany} acquisition`,
-        `${targetCompany} ${competitorCompany} merger`,
-        `${targetCompany} ${competitorCompany} investment`,
-        `${targetCompany} ${competitorCompany} funding`,
-        `${targetCompany} ${competitorCompany} alliance`,
-        `${targetCompany} ${competitorCompany} agreement`,
+        // `${targetCompany} ${competitorCompany} partnership`,
+        // `${targetCompany} ${competitorCompany} joint venture`,
+        // `${targetCompany} ${competitorCompany} acquisition`,
+        // `${targetCompany} ${competitorCompany} merger`,
+        // `${targetCompany} ${competitorCompany} investment`,
+        // `${targetCompany} ${competitorCompany} funding`,
+        // `${targetCompany} ${competitorCompany} alliance`,
+        // `${targetCompany} ${competitorCompany} agreement`,
     ];
 
     const results: Result[] = [];
@@ -37,9 +37,12 @@ export async function POST(req: Request) {
                     },
                 });
 
-                const $ = cheerio.load(html);
 
+                const $ = cheerio.load(html);
+                console.log("html", $.html()) // Log the first 1000 characters of the HTML
+                console.log("duckUrl", duckUrl)
                 $('a.result__a').each((_, el) => {
+                    console.log("loop")
                     const title = $(el).text().trim();
                     const rawLink = $(el).attr('href');
 
@@ -52,6 +55,7 @@ export async function POST(req: Request) {
                 });
             } catch (err: any) {
                 console.error(`Error scraping query "${query}":`, err.message);
+                return new Response(JSON.stringify({ error: `Failed to scrape data for query "${query}"`, errDetails: err.message }))
             }
         })
     );
