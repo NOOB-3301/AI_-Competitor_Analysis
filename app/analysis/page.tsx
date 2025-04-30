@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { CompetitorFinder } from '../components/CompetitorFinder'
-import { TargetAnalysis } from '../components/TargetAnalysis'
+import { CompetitorFinder } from '../components/analysiscomp/CompetitorFinder'
+import { TargetAnalysis } from '../components/analysiscomp/TargetAnalysis'
 export const CompetitorAnalysisPage = () => {
   const [analysisStep, setAnalysisStep] = useState(1)
   return (
