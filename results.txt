@@ -1,0 +1,742 @@
+<!DOCTYPE html><!--[if IE 6]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml"><![endif]--><!--[if IE 7]><html class="lt-ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]--><!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml"><![endif]--><!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Virgin Mediaandaccunturecollabs at DuckDuckGo</title>
+  <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="//duckduckgo.com/opensearch_html_v2.xml">
+  <link href="//duckduckgo.com/favicon.ico" rel="shortcut icon">
+  <link rel="icon" href="//duckduckgo.com/favicon.ico" type="image/x-icon">
+  <link id="icon60" rel="apple-touch-icon" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_60x60.png?v=2">
+  <link id="icon76" rel="apple-touch-icon" sizes="76x76" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_76x76.png?v=2">
+  <link id="icon120" rel="apple-touch-icon" sizes="120x120" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_120x120.png?v=2">
+  <link id="icon152" rel="apple-touch-icon" sizes="152x152" href="//duckduckgo.com/assets/icons/meta/DDG-iOS-icon_152x152.png?v=2">
+  <link rel="image_src" href="//duckduckgo.com/assets/icons/meta/DDG-icon_256x256.png">
+  <link rel="stylesheet" media="handheld, all" href="//duckduckgo.com/dist/h.dab3b9c322c5e1f32a48.css" type="text/css">
+</head>
+
+<body class="body--html">
+  <a name="top" id="top"></a>
+
+  <form action="/html/" method="post">
+    <input type="text" name="state_hidden" id="state_hidden">
+  </form>
+
+  <div>
+    <div class="site-wrapper-border"></div>
+
+    <div id="header" class="header cw header--html">
+        <a title="DuckDuckGo" href="/html/" class="header__logo-wrap"></a>
+
+
+    <form name="x" class="header__form" action="/html/" method="post">
+
+      <div class="search search--header">
+          <input name="q" autocomplete="off" class="search__input" id="search_form_input_homepage" type="text" value="Virgin Mediaandaccunturecollabs">
+          <input name="b" id="search_button_homepage" class="search__button search__button--html" value="" title="Search" alt="Search" type="submit">
+      </div>
+
+
+    
+    
+    
+    
+
+    <div class="frm__select">
+      <select name="kl">
+      
+        <option value="">All Regions</option>
+      
+        <option value="ar-es">Argentina</option>
+      
+        <option value="au-en">Australia</option>
+      
+        <option value="at-de">Austria</option>
+      
+        <option value="be-fr">Belgium (fr)</option>
+      
+        <option value="be-nl">Belgium (nl)</option>
+      
+        <option value="br-pt">Brazil</option>
+      
+        <option value="bg-bg">Bulgaria</option>
+      
+        <option value="ca-en">Canada (en)</option>
+      
+        <option value="ca-fr">Canada (fr)</option>
+      
+        <option value="ct-ca">Catalonia</option>
+      
+        <option value="cl-es">Chile</option>
+      
+        <option value="cn-zh">China</option>
+      
+        <option value="co-es">Colombia</option>
+      
+        <option value="hr-hr">Croatia</option>
+      
+        <option value="cz-cs">Czech Republic</option>
+      
+        <option value="dk-da">Denmark</option>
+      
+        <option value="ee-et">Estonia</option>
+      
+        <option value="fi-fi">Finland</option>
+      
+        <option value="fr-fr">France</option>
+      
+        <option value="de-de">Germany</option>
+      
+        <option value="gr-el">Greece</option>
+      
+        <option value="hk-tzh">Hong Kong</option>
+      
+        <option value="hu-hu">Hungary</option>
+      
+        <option value="is-is">Iceland</option>
+      
+        <option value="in-en">India (en)</option>
+      
+        <option value="id-en">Indonesia (en)</option>
+      
+        <option value="ie-en">Ireland</option>
+      
+        <option value="il-en">Israel (en)</option>
+      
+        <option value="it-it">Italy</option>
+      
+        <option value="jp-jp">Japan</option>
+      
+        <option value="kr-kr">Korea</option>
+      
+        <option value="lv-lv">Latvia</option>
+      
+        <option value="lt-lt">Lithuania</option>
+      
+        <option value="my-en">Malaysia (en)</option>
+      
+        <option value="mx-es">Mexico</option>
+      
+        <option value="nl-nl">Netherlands</option>
+      
+        <option value="nz-en">New Zealand</option>
+      
+        <option value="no-no">Norway</option>
+      
+        <option value="pk-en">Pakistan (en)</option>
+      
+        <option value="pe-es">Peru</option>
+      
+        <option value="ph-en">Philippines (en)</option>
+      
+        <option value="pl-pl">Poland</option>
+      
+        <option value="pt-pt">Portugal</option>
+      
+        <option value="ro-ro">Romania</option>
+      
+        <option value="ru-ru">Russia</option>
+      
+        <option value="xa-ar">Saudi Arabia</option>
+      
+        <option value="sg-en">Singapore</option>
+      
+        <option value="sk-sk">Slovakia</option>
+      
+        <option value="sl-sl">Slovenia</option>
+      
+        <option value="za-en">South Africa</option>
+      
+        <option value="es-ca">Spain (ca)</option>
+      
+        <option value="es-es">Spain (es)</option>
+      
+        <option value="se-sv">Sweden</option>
+      
+        <option value="ch-de">Switzerland (de)</option>
+      
+        <option value="ch-fr">Switzerland (fr)</option>
+      
+        <option value="tw-tzh">Taiwan</option>
+      
+        <option value="th-en">Thailand (en)</option>
+      
+        <option value="tr-tr">Turkey</option>
+      
+        <option value="us-en">US (English)</option>
+      
+        <option value="us-es">US (Spanish)</option>
+      
+        <option value="ua-uk">Ukraine</option>
+      
+        <option value="uk-en">United Kingdom</option>
+      
+        <option value="vn-en">Vietnam (en)</option>
+      
+      </select>
+    </div>
+
+    <div class="frm__select frm__select--last">
+      <select class="" name="df">
+      
+        <option value="" selected="">Any Time</option>
+      
+        <option value="d">Past Day</option>
+      
+        <option value="w">Past Week</option>
+      
+        <option value="m">Past Month</option>
+      
+        <option value="y">Past Year</option>
+      
+      </select>
+    </div>
+
+    </form>
+
+    </div>
+
+
+
+
+
+<!-- Web results are present -->
+
+  <div>
+  <div class="serp__results">
+  <div id="links" class="results">
+
+      
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.accenture.com%2Fus%2Den%2Fcase%2Dstudies%2Fcommunications%2Dmedia%2Fvmo2&amp;rut=30bc89e054c521e26e643c033df2cff0c8e6b4b6a059cc766065b1aa75848b73">Transforming Customer Experiences with Digital Innovation - Accenture</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.accenture.com%2Fus%2Den%2Fcase%2Dstudies%2Fcommunications%2Dmedia%2Fvmo2&amp;rut=30bc89e054c521e26e643c033df2cff0c8e6b4b6a059cc766065b1aa75848b73">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/www.accenture.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.accenture.com%2Fus%2Den%2Fcase%2Dstudies%2Fcommunications%2Dmedia%2Fvmo2&amp;rut=30bc89e054c521e26e643c033df2cff0c8e6b4b6a059cc766065b1aa75848b73">
+                  www.accenture.com/us-en/case-studies/communications-media/vmo2
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.accenture.com%2Fus%2Den%2Fcase%2Dstudies%2Fcommunications%2Dmedia%2Fvmo2&amp;rut=30bc89e054c521e26e643c033df2cff0c8e6b4b6a059cc766065b1aa75848b73">British provider <b>Virgin</b> Media O2 (VMO2) is doing just that, supercharging customer service using digital technologies and putting customer needs at the heart of everything it does. VMO2 was formed in 2021 following the merger of two of the UK's largest providers of broadband, home phone and mobile services. While the merger posed operating ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnewsroom.accenture.com%2Fnews%2F2024%2Fvirgin%2Dmedia%2Do2%2Dpartners%2Dwith%2Daccenture%2Dto%2Denhance%2Dprivate%2D5g%2Dsolutions%2Dfor%2Duk%2Dbusinesses%2Dtapping%2Dinto%2Destimated%2Dhalf%2Da%2Dbillion%2Dpound%2Duk%2Dmarket&amp;rut=283fdd4f58abde9a54201aac9484584cb6323c4cb7504e7f8880d493a9a65c96">Virgin Media O2 Partners with Accenture to Enhance ... - Accenture Newsroom</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnewsroom.accenture.com%2Fnews%2F2024%2Fvirgin%2Dmedia%2Do2%2Dpartners%2Dwith%2Daccenture%2Dto%2Denhance%2Dprivate%2D5g%2Dsolutions%2Dfor%2Duk%2Dbusinesses%2Dtapping%2Dinto%2Destimated%2Dhalf%2Da%2Dbillion%2Dpound%2Duk%2Dmarket&amp;rut=283fdd4f58abde9a54201aac9484584cb6323c4cb7504e7f8880d493a9a65c96">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/newsroom.accenture.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnewsroom.accenture.com%2Fnews%2F2024%2Fvirgin%2Dmedia%2Do2%2Dpartners%2Dwith%2Daccenture%2Dto%2Denhance%2Dprivate%2D5g%2Dsolutions%2Dfor%2Duk%2Dbusinesses%2Dtapping%2Dinto%2Destimated%2Dhalf%2Da%2Dbillion%2Dpound%2Duk%2Dmarket&amp;rut=283fdd4f58abde9a54201aac9484584cb6323c4cb7504e7f8880d493a9a65c96">
+                  newsroom.accenture.com/news/2024/virgin-media-o2-partners-with-accenture-to-enhance-private-5g-solutions-for-uk-businesses-tapping-into-estimated-half-a-billion-pound-uk-market
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fnewsroom.accenture.com%2Fnews%2F2024%2Fvirgin%2Dmedia%2Do2%2Dpartners%2Dwith%2Daccenture%2Dto%2Denhance%2Dprivate%2D5g%2Dsolutions%2Dfor%2Duk%2Dbusinesses%2Dtapping%2Dinto%2Destimated%2Dhalf%2Da%2Dbillion%2Dpound%2Duk%2Dmarket&amp;rut=283fdd4f58abde9a54201aac9484584cb6323c4cb7504e7f8880d493a9a65c96"><b>Virgin</b> Media O2's 5G private network capabilities for UK businesses will be augmented by Accenture's expertise in helping enterprises realise the potential of 5G with a broad set of applications for multiple industry segments—including computer vision artificial intelligence for product quality control monitoring of equipment to meet factory floor compliance requirements and queue ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faimagazine.com%2Farticles%2Faccenture%2Ddelivering%2Dtelco%2Dexcellence%2Das%2Dpartner%2Dto%2Dvmo2&amp;rut=731e0ff35ebb4c42f067b0d46b8818721ca4c0310fa1ce4c76946f41644ad492">Accenture: Delivering Telco Excellence as Partner to VMO2</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faimagazine.com%2Farticles%2Faccenture%2Ddelivering%2Dtelco%2Dexcellence%2Das%2Dpartner%2Dto%2Dvmo2&amp;rut=731e0ff35ebb4c42f067b0d46b8818721ca4c0310fa1ce4c76946f41644ad492">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/aimagazine.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faimagazine.com%2Farticles%2Faccenture%2Ddelivering%2Dtelco%2Dexcellence%2Das%2Dpartner%2Dto%2Dvmo2&amp;rut=731e0ff35ebb4c42f067b0d46b8818721ca4c0310fa1ce4c76946f41644ad492">
+                  aimagazine.com/articles/accenture-delivering-telco-excellence-as-partner-to-vmo2
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Faimagazine.com%2Farticles%2Faccenture%2Ddelivering%2Dtelco%2Dexcellence%2Das%2Dpartner%2Dto%2Dvmo2&amp;rut=731e0ff35ebb4c42f067b0d46b8818721ca4c0310fa1ce4c76946f41644ad492">This includes playing pivotal roles in some of VMO2's most critical business initiatives and programmes in that period, including the merging of <b>Virgin</b> Media and O2 three years ago. Derek continues: "We're currently working with VMO2 on a range of programmes spanning technology modernisation, commercial acceleration, optimisation of ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmail2.virginmedia.com%2Fappsuite%2Fapi%2Foidc%2Finit%3Fflow%3Dlogin%26redirect%3Dtrue%26client%3Dopen%2Dxchange%2Dappsuite%26version%3D7.10.5%2D37&amp;rut=1761b6665ec868c2f03b2eef00c6c8e31e70fda6d20c0afbee953f24f65aa06a">Sign in - Virgin Media</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmail2.virginmedia.com%2Fappsuite%2Fapi%2Foidc%2Finit%3Fflow%3Dlogin%26redirect%3Dtrue%26client%3Dopen%2Dxchange%2Dappsuite%26version%3D7.10.5%2D37&amp;rut=1761b6665ec868c2f03b2eef00c6c8e31e70fda6d20c0afbee953f24f65aa06a">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/mail2.virginmedia.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmail2.virginmedia.com%2Fappsuite%2Fapi%2Foidc%2Finit%3Fflow%3Dlogin%26redirect%3Dtrue%26client%3Dopen%2Dxchange%2Dappsuite%26version%3D7.10.5%2D37&amp;rut=1761b6665ec868c2f03b2eef00c6c8e31e70fda6d20c0afbee953f24f65aa06a">
+                  mail2.virginmedia.com/appsuite/api/oidc/init?flow=login&amp;redirect=true&amp;client=open-xchange-appsuite&amp;version=7.10.5-37
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fmail2.virginmedia.com%2Fappsuite%2Fapi%2Foidc%2Finit%3Fflow%3Dlogin%26redirect%3Dtrue%26client%3Dopen%2Dxchange%2Dappsuite%26version%3D7.10.5%2D37&amp;rut=1761b6665ec868c2f03b2eef00c6c8e31e70fda6d20c0afbee953f24f65aa06a">If you're not using your own device, read our help on private browsing before you sign in.</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fvirgin%2Dmedia%2Do2_vmo2%2Dx%2Daccenture%2Dpartnership%2Dactivity%2D7193981289228623875%2Dkf87&amp;rut=b587bae90704f6ba2dc7fd2a97029f4327aa6b11170292c7b40efb5661deee59">VMO2 x Accenture Partnership | Virgin Media O2 - LinkedIn</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fvirgin%2Dmedia%2Do2_vmo2%2Dx%2Daccenture%2Dpartnership%2Dactivity%2D7193981289228623875%2Dkf87&amp;rut=b587bae90704f6ba2dc7fd2a97029f4327aa6b11170292c7b40efb5661deee59">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/www.linkedin.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fvirgin%2Dmedia%2Do2_vmo2%2Dx%2Daccenture%2Dpartnership%2Dactivity%2D7193981289228623875%2Dkf87&amp;rut=b587bae90704f6ba2dc7fd2a97029f4327aa6b11170292c7b40efb5661deee59">
+                  www.linkedin.com/posts/virgin-media-o2_vmo2-x-accenture-partnership-activity-7193981289228623875-kf87
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fvirgin%2Dmedia%2Do2_vmo2%2Dx%2Daccenture%2Dpartnership%2Dactivity%2D7193981289228623875%2Dkf87&amp;rut=b587bae90704f6ba2dc7fd2a97029f4327aa6b11170292c7b40efb5661deee59">Today, we've announced that <b>Virgin</b> Media O2 Business and Accenture are partnering to provide a one-stop shop for businesses to tap into innovative and adaptive solutions - which builds on our ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fcontracts.justia.com%2Fcompanies%2Fvirgin%2Dmedia%2Dinc%2D31345%2F&amp;rut=8606b032c31b1e9bc54c0c47448b60cb77586d7b9a50419d629a5f876f3d3d3d">VIRGIN MEDIA INC. Contracts &amp; Agreements - Justia</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fcontracts.justia.com%2Fcompanies%2Fvirgin%2Dmedia%2Dinc%2D31345%2F&amp;rut=8606b032c31b1e9bc54c0c47448b60cb77586d7b9a50419d629a5f876f3d3d3d">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/contracts.justia.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fcontracts.justia.com%2Fcompanies%2Fvirgin%2Dmedia%2Dinc%2D31345%2F&amp;rut=8606b032c31b1e9bc54c0c47448b60cb77586d7b9a50419d629a5f876f3d3d3d">
+                  contracts.justia.com/companies/virgin-media-inc-31345/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fcontracts.justia.com%2Fcompanies%2Fvirgin%2Dmedia%2Dinc%2D31345%2F&amp;rut=8606b032c31b1e9bc54c0c47448b60cb77586d7b9a50419d629a5f876f3d3d3d"><b>VIRGIN</b> MEDIA INC. 909Third Avenue NewYork, New York 10022 (Filed With SEC on August 7, 2009) DATED31 JULY 2009 <b>VIRGIN</b> MEDIA LIMITED and Robert Gale SERVICE AGREEMENT (Filed With SEC on August 7, 2009)</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.marketingweek.com%2Fvmo2%2Dvccp%2Dlong%2Drelationship%2F&amp;rut=da4ec325c747183499c0453450de88295e0223506cc9b42fbdab6bb948ecddeb">This Much I Learned: Virgin Media O2 and VCCP on keeping their long ...</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.marketingweek.com%2Fvmo2%2Dvccp%2Dlong%2Drelationship%2F&amp;rut=da4ec325c747183499c0453450de88295e0223506cc9b42fbdab6bb948ecddeb">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/www.marketingweek.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.marketingweek.com%2Fvmo2%2Dvccp%2Dlong%2Drelationship%2F&amp;rut=da4ec325c747183499c0453450de88295e0223506cc9b42fbdab6bb948ecddeb">
+                  www.marketingweek.com/vmo2-vccp-long-relationship/
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.marketingweek.com%2Fvmo2%2Dvccp%2Dlong%2Drelationship%2F&amp;rut=da4ec325c747183499c0453450de88295e0223506cc9b42fbdab6bb948ecddeb">A lot has happened since then, not least the merger with <b>Virgin</b> Media to create the <b>Virgin</b> Media O2 business in 2021. But over two decades later, the partnership with VCCP is still going strong. Speaking on Marketing Week's This Much I Learned podcast, Vallance and VMO2's marketing director Simon Valcarcel tell host and Marketing Week ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thedrum.com%2Fnews%2F2021%2F08%2F24%2Fpeople%2Dthe%2Dmove%2Dincluding%2Dchanges%2Daccenture%2Dvirgin%2Dmedia%2Dand%2Dthe%2Dco%2Dop&amp;rut=218bed7ec40107ca8e62e402f4c90c603f3aab2c749e7edbcf23d4781855db7b">People on the Move, including changes at Accenture, Virgin ... - The Drum</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thedrum.com%2Fnews%2F2021%2F08%2F24%2Fpeople%2Dthe%2Dmove%2Dincluding%2Dchanges%2Daccenture%2Dvirgin%2Dmedia%2Dand%2Dthe%2Dco%2Dop&amp;rut=218bed7ec40107ca8e62e402f4c90c603f3aab2c749e7edbcf23d4781855db7b">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/www.thedrum.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thedrum.com%2Fnews%2F2021%2F08%2F24%2Fpeople%2Dthe%2Dmove%2Dincluding%2Dchanges%2Daccenture%2Dvirgin%2Dmedia%2Dand%2Dthe%2Dco%2Dop&amp;rut=218bed7ec40107ca8e62e402f4c90c603f3aab2c749e7edbcf23d4781855db7b">
+                  www.thedrum.com/news/2021/08/24/people-the-move-including-changes-accenture-virgin-media-and-the-co-op
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.thedrum.com%2Fnews%2F2021%2F08%2F24%2Fpeople%2Dthe%2Dmove%2Dincluding%2Dchanges%2Daccenture%2Dvirgin%2Dmedia%2Dand%2Dthe%2Dco%2Dop&amp;rut=218bed7ec40107ca8e62e402f4c90c603f3aab2c749e7edbcf23d4781855db7b"><b>Virgin</b> Media O2 has announced Simon Groves as its new director of brand and marketing. Groves will report to chief operating officer Jeff Dodds and will lead on the company's brand and marketing ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.contentree.com%2FcaseStudy%2Fvirgin%2Dmedia%2Dand%2Daccenture%2Dmodel%2Dpartnership%2Denhances%2Dprocurement%2Defficiency_91461&amp;rut=8dac616c0ca5a5f68b949a8da7e4e4642a62dbac506172db0a5c36a50fc66895">Virgin Media and Accenture: Model partnership enhances procu</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.contentree.com%2FcaseStudy%2Fvirgin%2Dmedia%2Dand%2Daccenture%2Dmodel%2Dpartnership%2Denhances%2Dprocurement%2Defficiency_91461&amp;rut=8dac616c0ca5a5f68b949a8da7e4e4642a62dbac506172db0a5c36a50fc66895">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/www.contentree.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.contentree.com%2FcaseStudy%2Fvirgin%2Dmedia%2Dand%2Daccenture%2Dmodel%2Dpartnership%2Denhances%2Dprocurement%2Defficiency_91461&amp;rut=8dac616c0ca5a5f68b949a8da7e4e4642a62dbac506172db0a5c36a50fc66895">
+                  www.contentree.com/caseStudy/virgin-media-and-accenture-model-partnership-enhances-procurement-efficiency_91461
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.contentree.com%2FcaseStudy%2Fvirgin%2Dmedia%2Dand%2Daccenture%2Dmodel%2Dpartnership%2Denhances%2Dprocurement%2Defficiency_91461&amp;rut=8dac616c0ca5a5f68b949a8da7e4e4642a62dbac506172db0a5c36a50fc66895"><b>Virgin</b> Media and Accenture: Model partnership enhances procurement ef?ciencyBusiness challenge Mergers and acquisitions (M&amp;A) is one of the quickest routes through which companies can scale their operations and expand their market position. Yet mergers and acquisitions are not without risk, as evidenced by a 2006 Accenture survey, carried out ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="result results_links results_links_deep web-result ">
+
+
+          <div class="links_main links_deep result__body"> <!-- This is the visible part -->
+
+          <h2 class="result__title">
+          
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.virgin.com%2Fabout%2Dvirgin%2Flatest%2Fthe%2Dbest%2Dvirgin%2Dcollaborations&amp;rut=a21c66656bb2a8766630612d8b998d5a281fedb9e3d3f9500f18f81272a6eb0e">The best Virgin collaborations</a>
+          
+          </h2>
+
+      
+
+            <div class="result__extras">
+                <div class="result__extras__url">
+                  <span class="result__icon">
+                    
+                      <a rel="nofollow" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.virgin.com%2Fabout%2Dvirgin%2Flatest%2Fthe%2Dbest%2Dvirgin%2Dcollaborations&amp;rut=a21c66656bb2a8766630612d8b998d5a281fedb9e3d3f9500f18f81272a6eb0e">
+                        <img class="result__icon__img" width="16" height="16" alt="" src="//external-content.duckduckgo.com/ip3/www.virgin.com.ico" name="i15">
+                      </a>
+                  
+                  </span>
+
+                  <a class="result__url" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.virgin.com%2Fabout%2Dvirgin%2Flatest%2Fthe%2Dbest%2Dvirgin%2Dcollaborations&amp;rut=a21c66656bb2a8766630612d8b998d5a281fedb9e3d3f9500f18f81272a6eb0e">
+                  www.virgin.com/about-virgin/latest/the-best-virgin-collaborations
+                  </a>
+
+                  
+
+                </div>
+            </div>
+
+            
+                  <a class="result__snippet" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.virgin.com%2Fabout%2Dvirgin%2Flatest%2Fthe%2Dbest%2Dvirgin%2Dcollaborations&amp;rut=a21c66656bb2a8766630612d8b998d5a281fedb9e3d3f9500f18f81272a6eb0e">Here, we're taking a look at a couple of the best collaborations <b>Virgin</b> has been involved in over the years from uniform and spatial design to fun advertising campaigns featuring some special guests. <b>Virgin</b> Atlantic and fashion icons. Over the years, <b>Virgin</b> Atlantic has worked with some of the world's top designers to create its uniforms ...</a>
+            
+
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+  
+
+
+
+
+        
+        
+                <div class="nav-link">
+        <form action="/html/" method="post">
+          <input type="submit" class="btn btn--alt" value="Next">
+          <input type="hidden" name="q" value="Virgin Mediaandaccunturecollabs">
+          <input type="hidden" name="s" value="10">
+          <input type="hidden" name="nextParams" value="">
+          <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="11">
+          <input type="hidden" name="api" value="d.js">
+          <input type="hidden" name="vqd" value="4-115449656744484408978504873133651834076">
+
+        
+        
+        
+          <input name="kl" value="wt-wt" type="hidden">
+        
+        
+        
+        
+        </form>
+                </div>
+        
+
+
+
+        <div class=" feedback-btn">
+            <a rel="nofollow" href="//duckduckgo.com/feedback.html" target="_new">Feedback</a>
+        </div>
+        <div class="clear"></div>
+  </div>
+  </div> <!-- links wrapper //-->
+
+
+
+    </div>
+  </div>
+
+    <div id="bottom_spacing2"></div>
+
+    
+      <img src="//duckduckgo.com/t/sl_h">
+    
+
+
+</body></html>
