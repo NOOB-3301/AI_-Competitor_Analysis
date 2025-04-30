@@ -12,17 +12,7 @@ export async function POST(req: Request) {
         return new Response(JSON.stringify({ error: 'Missing company names' }), { status: 400 });
     }
 
-    const queryCollabs = [
-        `${targetCompany} ${competitorCompany} collaboration`,
-        // `${targetCompany} ${competitorCompany} partnership`,
-        // `${targetCompany} ${competitorCompany} joint venture`,
-        // `${targetCompany} ${competitorCompany} acquisition`,
-        // `${targetCompany} ${competitorCompany} merger`,
-        // `${targetCompany} ${competitorCompany} investment`,
-        // `${targetCompany} ${competitorCompany} funding`,
-        // `${targetCompany} ${competitorCompany} alliance`,
-        // `${targetCompany} ${competitorCompany} agreement`,
-    ];
+    const queryCollabs = [`${targetCompany} ${competitorCompany} collaboration`];
 
     const results: Result[] = [];
 
