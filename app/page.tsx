@@ -8,14 +8,14 @@ import { Footer } from "./components/Footer";
 export default function Home() {
   return (
     <div className="w-full min-h-screen bg-slate-50">
-      <Header />
+      {/* <Header /> */}
       <main>
         <HeroSection />
         <HowItWorks />
         <CompetitorFindings />
         <CallToAction />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

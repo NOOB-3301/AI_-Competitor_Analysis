@@ -1,6 +1,8 @@
+"use client"
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { SearchIcon, BuildingIcon, LoaderIcon } from 'lucide-react'
+
 interface CompetitorFinderProps {
   isActive: boolean
   onComplete: () => void

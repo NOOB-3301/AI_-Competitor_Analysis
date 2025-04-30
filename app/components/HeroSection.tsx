@@ -2,7 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SearchIcon, ZapIcon } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+
 export const HeroSection = () => {
+  const router = useRouter()
+
   return (
     <section id="home" className="pt-28 pb-20 px-4 md:px-6 lg:px-10 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-7xl mx-auto">
@@ -53,7 +57,7 @@ export const HeroSection = () => {
               delay: 0.6,
               duration: 0.8
             }}>
-              <motion.button className="px-8 py-4 bg-blue-600 text-white font-medium rounded-lg shadow-lg hover:bg-blue-700 flex items-center justify-center" whileHover={{
+              <motion.button onClick={()=>router.push('/analysis')} className="px-8 py-4 bg-blue-600 text-white font-medium rounded-lg shadow-lg hover:bg-blue-700 flex items-center justify-center" whileHover={{
                 scale: 1.05
               }} whileTap={{
                 scale: 0.95

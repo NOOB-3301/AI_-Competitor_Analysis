@@ -1,8 +1,12 @@
+"use client"
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { CompetitorFinder } from '../components/analysiscomp/CompetitorFinder'
 import { TargetAnalysis } from '../components/analysiscomp/TargetAnalysis'
-export const CompetitorAnalysisPage = () => {
+
+
+
+export default function page()  {
   const [analysisStep, setAnalysisStep] = useState(1)
   return (
     <main className="pt-28 pb-20">
