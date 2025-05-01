@@ -13,7 +13,7 @@ CompetitorAnalysis is a modern web application that helps businesses uncover and
 - **Export Capabilities**: Export findings to CSV for further analysis
 - **Real-time Processing**: Get results in minutes instead of hours of manual research
 - **Interactive UI**: Built with modern animations and responsive design
-
+- **Sample Result in CSV**: ![CSV File](/results%20(1).csv)
 ## 🔄 Data Flow Architecture
 
 ![Data Flow Diagram](/public/Screenshot%202025-05-01%20160133.png)
