@@ -28,7 +28,7 @@ export const Header = () => {
         delay: 0.2
       }}>
         <EyeIcon className="h-8 w-8 text-blue-600 mr-2" />
-        <span className="text-xl font-bold text-gray-900">CompetitorSpy</span>
+        <span className="text-xl font-bold text-gray-900">CompetitorAnalysis</span>
       </motion.div>
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-8">
