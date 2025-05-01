@@ -6,11 +6,11 @@ export const HowItWorks = () => {
   const steps = [{
     icon: <SearchIcon className="h-8 w-8 text-blue-600" />,
     title: 'AI-Powered Research',
-    description: 'Our AI scans millions of public sources to find connections between your competitors and target accounts.'
+    description: 'Scan the search result with Google Gemini to get more accurate results.'
   }, {
     icon: <DatabaseIcon className="h-8 w-8 text-blue-600" />,
     title: 'Data Analysis',
-    description: 'We analyze the data to identify confirmed business relationships and ongoing projects.'
+    description: 'Analyze available public data to identify which of your competitors have worked with your target accounts.'
   }, {
     icon: <BarChartIcon className="h-8 w-8 text-blue-600" />,
     title: 'Insight Generation',

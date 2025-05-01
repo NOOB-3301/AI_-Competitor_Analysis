@@ -12,8 +12,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <HowItWorks />
-        <CompetitorFindings />
-        <CallToAction />
+        {/* <CompetitorFindings /> */}
+        {/* <CallToAction /> */}
       </main>
       {/* <Footer /> */}
     </div>
