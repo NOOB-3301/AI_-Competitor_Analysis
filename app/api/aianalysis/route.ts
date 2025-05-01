@@ -1,5 +1,4 @@
 import { NextRequest } from "next/server";
-// import { GoogleGenerativeAI } from "@google/generative-ai";
 import { GoogleGenAI } from "@google/genai";
 
 type Result = {
