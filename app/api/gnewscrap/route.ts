@@ -42,7 +42,6 @@ export async function POST(req: Request) {
         }
 
         return new Response(JSON.stringify({ count: results.length, results }), { status: 200 });
-
     } catch (error) {
         console.error('Error:', error);
         return new Response(JSON.stringify({ error: 'Failed to scrape data', errorLog: error }), { status: 500 });
