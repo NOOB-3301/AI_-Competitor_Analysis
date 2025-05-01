@@ -9,6 +9,9 @@ import {
 } from 'lucide-react'
 import axios from 'axios'
 import ExportCSVButton from '@/app/analysis/exporttocsv'
+import { useCompetitorStore } from '@/app/store/competitorStore'
+
+
 interface AnalysisResult {
   title: string
   link: string
@@ -16,6 +19,10 @@ interface AnalysisResult {
 }
 
 export const TargetAnalysis = () => {
+
+  const competitors = useCompetitorStore((state) => state.competitors)
+  const setCompetitors = useCompetitorStore((state) => state.setCompetitors)
+
   const [targetCompany, setTargetCompany] = useState('')
   const [competitorCompany, setCompetitorCompany] = useState('')
   const [searchScope, setSearchScope] = useState('1')
@@ -103,13 +110,42 @@ export const TargetAnalysis = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="flex items-center mb-8">
-        <div className="bg-purple-100 p-3 rounded-full mr-4">
-          <TargetIcon className="h-6 w-6 text-purple-600" />
+      <div className="flex flex-col items-start mb-8">
+        <div className="flex flex-row items-center mb-4">
+          <div className="bg-purple-100 p-3 rounded-full mr-4">
+            <TargetIcon className="h-6 w-6 text-purple-600" />
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Target Company Analysis
+          </h2>
         </div>
-        <h2 className="text-2xl font-bold text-gray-900">
-          Target Company Analysis
-        </h2>
+
+        <div>
+          <strong>Your previous search includes</strong>
+          {competitors.length > 0 ? (
+            <div className="flex flex-wrap gap-2">
+              {competitors.map((comp, index) => (
+                <motion.span
+                  key={index}
+                  className="ml-2 px-4 py-2 bg-purple-200 text-purple-800 rounded-full text-sm font-semibold cursor-pointer transition-colors hover:bg-purple-300"
+                  onClick={() => {
+                    setCompetitorCompany(comp.title)
+                  }}
+                  whileHover={{
+                    scale: 1.1,
+                    backgroundColor: '#D6B5F5', // Hover effect
+                  }}
+                  whileTap={{ scale: 0.95 }} // Slight scaling on click
+                  initial={{ opacity: 0, y: 20 }} // Start hidden and below
+                  animate={{ opacity: 1, y: 0 }} // Animate to visible position
+                  transition={{ duration: 0.3, delay: index * 0.1 }} // Staggered fade-in
+                >
+                  {comp.title} ({(comp.confidence * 100).toFixed(2)}%)
+                </motion.span>
+              ))}
+            </div>
+          ) : null}
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -197,21 +233,21 @@ export const TargetAnalysis = () => {
             className="mt-10"
           >
             <div className='flex flex-row items-center justify-between mb-4'>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              All Results From Different Sources
-            </h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                All Results From Different Sources
+              </h3>
 
-          {ailoading ? (
-            <LoaderIcon className="h-5 w-5 animate-spin" />
-          ):(
-            <button
-            onClick={handleAIAnalysis}
-            className="flex items-center gap-2 px-4 py-2 mb-3 bg-blue-500 text-white rounded-4xl hover:bg-blue-700 transition"
-          >
-            <BrainCircuit className="" />
-            Run AI Analysis
-          </button>
-          )}
+              {ailoading ? (
+                <LoaderIcon className="h-5 w-5 animate-spin" />
+              ) : (
+                <button
+                  onClick={handleAIAnalysis}
+                  className="flex items-center gap-2 px-4 py-2 mb-3 bg-blue-500 text-white rounded-4xl hover:bg-blue-700 transition"
+                >
+                  <BrainCircuit className="" />
+                  Run AI Analysis
+                </button>
+              )}
             </div>
             <div className="space-y-4">
               {results.map((result, index) => (

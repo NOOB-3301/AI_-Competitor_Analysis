@@ -57,7 +57,7 @@ export const HeroSection = () => {
               delay: 0.6,
               duration: 0.8
             }}>
-              <motion.button onClick={()=>router.push('/analysis')} className="px-8 py-4 bg-blue-600 text-white font-medium rounded-lg shadow-lg hover:bg-blue-700 flex items-center justify-center" whileHover={{
+              <motion.button onClick={()=>router.push('/competitors')} className="px-8 py-4 bg-blue-600 text-white font-medium rounded-lg shadow-lg hover:bg-blue-700 flex items-center justify-center" whileHover={{
                 scale: 1.05
               }} whileTap={{
                 scale: 0.95
