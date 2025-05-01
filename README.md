@@ -1,4 +1,4 @@
-# CompetitorSpy - AI-Powered Competitive Intelligence Platform
+# CompetitorAnalysis - AI-Powered Competitive Intelligence Platform
 
 CompetitorAnalysis is a modern web application that helps businesses uncover and analyze competitor relationships with target accounts using AI-powered research and analysis.
 
