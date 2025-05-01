@@ -49,7 +49,7 @@ export async function POST(req: Request) {
             results.push({ title, link });
         });
 
-        return new Response(JSON.stringify(results, null, 2), { status: 200 });
+        return new Response(JSON.stringify({ count: results.length, results }), { status: 200 });
 
         // return new Response($.html(), { status: 200 });
     } catch (error) {
