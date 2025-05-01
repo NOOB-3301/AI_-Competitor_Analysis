@@ -1,9 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CompetitorSpy - AI-Powered Competitive Intelligence Platform
 
-## Getting Started
+CompetitorSpy is a modern web application that helps businesses uncover and analyze competitor relationships with target accounts using AI-powered research and analysis.
 
-First, run the development server:
+## 🚀 Features
 
+- **AI-Powered Research**: Automatically scans millions of public sources to find connections between competitors and target accounts
+- **Multi-Source Analysis**: Integrates data from multiple sources including:
+  - DuckDuckGo Search
+  - Google News
+  - ScrapeAPI
+- **Smart Analysis**: Uses Google's Generative AI to analyze and score relationship confidence
+- **Export Capabilities**: Export findings to CSV for further analysis
+- **Real-time Processing**: Get results in minutes instead of hours of manual research
+- **Interactive UI**: Built with modern animations and responsive design
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 15.3.1 with React 19
+- **UI Animation**: Framer Motion
+- **State Management**: Zustand
+- **Styling**: TailwindCSS
+- **AI Integration**: Google GenAI
+- **Icons**: Lucide React
+- **HTTP Client**: Axios
+- **Web Scraping**: Cheerio, SerpAPI
+
+## 🚦 Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
@@ -14,23 +50,45 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── analysis/          # Analysis components and CSV export
+├── api/              # API routes for data fetching and analysis
+├── components/       # Reusable UI components
+├── competitors/      # Competitor analysis pages
+└── store/           # Global state management
+```
 
-## Learn More
+## 🔍 Key Features Explained
 
-To learn more about Next.js, take a look at the following resources:
+### Target Analysis
+- Input target and competitor companies
+- Select search scope (DuckDuckGo, GNews, ScrapeAPI)
+- Get AI-analyzed results with confidence scores
+- Export findings to CSV
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Competitor Finder
+- Find relevant competitors in your industry
+- Get detailed relationship information
+- View historical engagement data
+- Analyze partnership status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Use Cases
 
-## Deploy on Vercel
+- **Sales Intelligence**: Understand competitor relationships with target accounts
+- **Market Research**: Quick competitive analysis for new markets
+- **Strategic Planning**: Identify partnership opportunities and gaps
+- **Sales Approach**: Tailor your pitch based on competitor relationships
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔐 Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To run this project, you'll need to add the following environment variables to your `.env` file:
+
+```env
+# Add your environment variables here
+```
+

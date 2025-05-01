@@ -84,6 +84,7 @@ export default function CompetitorFinderPage() {
             )}
           </motion.button>
 
+        </form>
           {competitors.length === 0 && (
             <motion.button
               className="mt-8 px-6 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow-lg hover:bg-purple-600 flex items-center justify-center mx-auto transition-all duration-200"
@@ -94,7 +95,6 @@ export default function CompetitorFinderPage() {
               Analyze with Custom Search
             </motion.button>
           )}
-        </form>
 
         <AnimatePresence>
           {competitors.length > 0 && (

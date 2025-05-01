@@ -10,6 +10,7 @@ import {
 import axios from 'axios'
 import ExportCSVButton from '@/app/analysis/exporttocsv'
 import { useCompetitorStore } from '@/app/store/competitorStore'
+import PaginatedResults from './paginatedComp'
 
 
 interface AnalysisResult {
@@ -34,18 +35,18 @@ export const TargetAnalysis = () => {
   const handleScope = async (
     targetCompany: string,
     competitorCompany: string,
-    searchScope: number
+    searchScope: number | string // Update type
   ): Promise<AnalysisResult[]> => {
-    const endpoints = []
-
-    if (searchScope >= 1) {
-      endpoints.push("/api/getcollabs") // DuckDuckGo
-    }
-    if (searchScope >= 2) {
-      endpoints.push("/api/gnewscrap") // GNews
-    }
-    if (searchScope >= 3) {
-      endpoints.push("/api/apiscrape") // ScrapeAPI
+    const endpoints: string[] = []
+    console.log("searchScope", searchScope)
+    if (searchScope === 'pdf') {
+      console.log("PDF scraping")
+      endpoints.push("/api/pdfscrape") // Your PDF scraping endpoint
+    } else {
+      const numericScope = parseInt(searchScope as string)
+      if (numericScope >= 1) endpoints.push("/api/getcollabs")
+      if (numericScope >= 2) endpoints.push("/api/gnewscrap")
+      if (numericScope >= 3) endpoints.push("/api/apiscrape")
     }
 
     const requests = endpoints.map((url) =>
@@ -58,8 +59,7 @@ export const TargetAnalysis = () => {
     try {
       const responses = await Promise.all(requests)
       responses.forEach((res) => {
-        console.log(`Response from ${res.config.url}:`)
-        console.log(res.data.count)
+        console.log(`Response from ${res.config.url}:`, res.data.count)
       })
       const allResults = responses.flatMap((res) => res.data.results)
       return allResults
@@ -69,17 +69,30 @@ export const TargetAnalysis = () => {
     }
   }
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
 
     try {
-      const combinedResults = await handleScope(
-        targetCompany,
-        competitorCompany,
-        parseInt(searchScope)
-      )
-      setResults(combinedResults)
+      if (searchScope === 'pdf') {
+        console.log("PDF scraping")
+        setResults([]) // Clear previous results
+        const pdfResults = await handleScope(
+          targetCompany,
+          competitorCompany,
+          searchScope
+        )
+        setResults(pdfResults)        
+      }else{
+
+        const combinedResults = await handleScope(
+          targetCompany,
+          competitorCompany,
+          parseInt(searchScope)
+        )
+        setResults(combinedResults)
+      }
     } catch (error) {
       console.error("Error fetching data:", error)
     } finally {
@@ -203,7 +216,9 @@ export const TargetAnalysis = () => {
             <option value="1">DuckDuckGo only</option>
             <option value="2">DuckDuckGo + GNews</option>
             <option value="3">DuckDuckGo + GNews + ScrapeAPI</option>
+            <option value="pdf">PDF Files Only</option> {/* NEW */}
           </select>
+
         </div>
 
         <motion.button
@@ -233,10 +248,12 @@ export const TargetAnalysis = () => {
             className="mt-10"
           >
             <div className='flex flex-row items-center justify-between mb-4'>
+              <div className='flex flex-col mt-0'>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
                 All Results From Different Sources
               </h3>
-
+              <p>Total Results: {results.length}</p>
+              </div>
               {ailoading ? (
                 <LoaderIcon className="h-5 w-5 animate-spin" />
               ) : (
@@ -250,7 +267,7 @@ export const TargetAnalysis = () => {
               )}
             </div>
             <div className="space-y-4">
-              {results.map((result, index) => (
+              {/* {results.map((result, index) => (
                 <motion.a
                   key={index}
                   href={result.link}
@@ -274,7 +291,8 @@ export const TargetAnalysis = () => {
                     </p>
                   )}
                 </motion.a>
-              ))}
+              ))} */}
+              <PaginatedResults results={results} />
             </div>
           </motion.div>
         )}
