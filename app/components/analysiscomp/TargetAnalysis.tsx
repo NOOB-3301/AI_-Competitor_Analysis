@@ -1,33 +1,99 @@
 "use client"
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, convertOffsetToTimes } from 'framer-motion'
 import {
   TargetIcon,
   LoaderIcon,
   ExternalLinkIcon,
+  BrainCircuit,
 } from 'lucide-react'
 import axios from 'axios'
-
+import ExportCSVButton from '@/app/analysis/exporttocsv'
 interface AnalysisResult {
   title: string
   link: string
+  confidence?: number
 }
 
 export const TargetAnalysis = () => {
   const [targetCompany, setTargetCompany] = useState('')
   const [competitorCompany, setCompetitorCompany] = useState('')
+  const [searchScope, setSearchScope] = useState('1')
   const [isLoading, setIsLoading] = useState(false)
   const [results, setResults] = useState<AnalysisResult[]>([])
+
+  const [ailoading, setailoading] = useState(false)
+
+  const handleScope = async (
+    targetCompany: string,
+    competitorCompany: string,
+    searchScope: number
+  ): Promise<AnalysisResult[]> => {
+    const endpoints = []
+
+    if (searchScope >= 1) {
+      endpoints.push("/api/getcollabs") // DuckDuckGo
+    }
+    if (searchScope >= 2) {
+      endpoints.push("/api/gnewscrap") // GNews
+    }
+    if (searchScope >= 3) {
+      endpoints.push("/api/apiscrape") // ScrapeAPI
+    }
+
+    const requests = endpoints.map((url) =>
+      axios.post(url, {
+        targetCompany,
+        competitorCompany,
+      })
+    )
+
+    try {
+      const responses = await Promise.all(requests)
+      responses.forEach((res) => {
+        console.log(`Response from ${res.config.url}:`)
+        console.log(res.data.count)
+      })
+      const allResults = responses.flatMap((res) => res.data.results)
+      return allResults
+    } catch (error) {
+      console.error("Error in fetching data from scope endpoints:", error)
+      return []
+    }
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
-    const resp = await axios.post("/api/getcollabs", {
-      targetCompany,
-      competitorCompany
+
+    try {
+      const combinedResults = await handleScope(
+        targetCompany,
+        competitorCompany,
+        parseInt(searchScope)
+      )
+      setResults(combinedResults)
+    } catch (error) {
+      console.error("Error fetching data:", error)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  const handleAIAnalysis = async () => {
+    setailoading(true)
+    console.log("results", results)
+    const airesp = await axios.post('/api/aianalysis', {
+      results: results,
     })
-    setIsLoading(false)
-    setResults(resp.data.results)
+    console.log("airesp", airesp.data)
+    airesp.data.result.sort((a: AnalysisResult, b: AnalysisResult) => {
+      return (b.confidence || 0) - (a.confidence || 0)
+    })
+    console.log("sorted", airesp.data.result)
+    setResults(airesp.data.result)
+    setailoading(false)
+
   }
 
   return (
@@ -65,6 +131,7 @@ export const TargetAnalysis = () => {
               required
             />
           </div>
+
           <div>
             <label
               htmlFor="competitor-company"
@@ -82,6 +149,25 @@ export const TargetAnalysis = () => {
               required
             />
           </div>
+        </div>
+
+        <div>
+          <label
+            htmlFor="search-scope"
+            className="block text-sm font-medium text-gray-700 mb-1"
+          >
+            Search Scope
+          </label>
+          <select
+            id="search-scope"
+            value={searchScope}
+            onChange={(e) => setSearchScope(e.target.value)}
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
+          >
+            <option value="1">DuckDuckGo only</option>
+            <option value="2">DuckDuckGo + GNews</option>
+            <option value="3">DuckDuckGo + GNews + ScrapeAPI</option>
+          </select>
         </div>
 
         <motion.button
@@ -110,9 +196,23 @@ export const TargetAnalysis = () => {
             exit={{ opacity: 0, height: 0 }}
             className="mt-10"
           >
+            <div className='flex flex-row items-center justify-between mb-4'>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              Analysis Results
+              All Results From Different Sources
             </h3>
+
+          {ailoading ? (
+            <LoaderIcon className="h-5 w-5 animate-spin" />
+          ):(
+            <button
+            onClick={handleAIAnalysis}
+            className="flex items-center gap-2 px-4 py-2 mb-3 bg-blue-500 text-white rounded-4xl hover:bg-blue-700 transition"
+          >
+            <BrainCircuit className="" />
+            Run AI Analysis
+          </button>
+          )}
+            </div>
             <div className="space-y-4">
               {results.map((result, index) => (
                 <motion.a
@@ -132,22 +232,21 @@ export const TargetAnalysis = () => {
                     <ExternalLinkIcon className="h-4 w-4 text-purple-400 mt-1" />
                   </div>
                   <p className="text-sm text-gray-500 truncate">{result.link}</p>
+                  {typeof result.confidence === 'number' && (
+                    <p className="text-xs text-gray-700 mt-1 font-extrabold">
+                      Confidence: {(result.confidence * 100).toFixed(2)}%
+                    </p>
+                  )}
                 </motion.a>
               ))}
             </div>
-
-            <div className="mt-6 text-center">
-              <a
-                href="#"
-                className="inline-flex items-center text-purple-600 hover:text-purple-800 transition"
-              >
-                View Detailed Report
-                <ExternalLinkIcon className="ml-1 h-4 w-4" />
-              </a>
-            </div>
           </motion.div>
         )}
+
       </AnimatePresence>
+      <div className="fixed bottom-4 right-4 z-50">
+        <ExportCSVButton data={results} />
+      </div>
     </motion.section>
   )
 }

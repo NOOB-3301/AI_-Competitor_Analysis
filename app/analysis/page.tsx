@@ -34,10 +34,10 @@ export default function page()  {
           </p>
         </motion.div>
         <div className="space-y-8">
-          <CompetitorFinder
+          {/* <CompetitorFinder
             isActive={analysisStep === 1}
             onComplete={() => setAnalysisStep(2)}
-          />
+          /> */}
           <TargetAnalysis/>
         </div>
       </div>
