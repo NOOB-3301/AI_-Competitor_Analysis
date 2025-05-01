@@ -2,28 +2,39 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { SearchIcon, Building2, Loader2 } from "lucide-react"
+import axios from "axios"
+import { useRouter } from "next/navigation"
+import { useCompetitorStore } from "../store/competitorStore"
+
+interface Competitor {
+  title: string,
+    confidence: number
+}
 
 export default function CompetitorFinderPage() {
-  const [company, setCompany] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
-  const [competitors, setCompetitors] = useState<string[]>([])
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
-
-    setTimeout(() => {
-      setCompetitors([
-        "Accenture",
-        "TCS",
-        "Wipro",
-        "Cognizant",
-        "Capgemini",
-        "HCL Technologies",
-      ])
+    const [company, setCompany] = useState("")
+    const [isLoading, setIsLoading] = useState(false)
+  
+    // ✅ Zustand store hooks
+    const competitors = useCompetitorStore((state) => state.competitors)
+    const setCompetitors = useCompetitorStore((state) => state.setCompetitors)
+  
+    const router = useRouter()
+  
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault()
+      setIsLoading(true)
+  
+      const compres = await axios.post("/api/getcomp", {
+        "targetCompany": company
+      })
+  
+      const data = compres.data.result
+      console.log("Competitors data:", data)
+      setCompetitors(data) // ✅ sets Zustand state
+  
       setIsLoading(false)
-    }, 2000)
-  }
+    }
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-12">
@@ -85,23 +96,28 @@ export default function CompetitorFinderPage() {
             >
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Top Competitors</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {competitors.map((competitor) => (
+                {competitors.map((competitor,i) => (
                   <motion.div
-                    key={competitor}
+                    key={i}
                     className="p-4 bg-gray-50 border border-gray-200 rounded-lg"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                   >
-                    {competitor}
+                    <div className="flex flex-row gap-2">
+
+                    <Building2 className=" " />
+                    <strong>{competitor.title}</strong>
+                    </div>
+                    <p>Confidence Metric: {competitor.confidence}</p>
                   </motion.div>
                 ))}
               </div>
 
               <motion.button
-                className="mt-8 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 flex items-center justify-center mx-auto"
+                className="mt-8 px-6 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-600 flex items-center justify-center mx-auto"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.97 }}
-                onClick={() => alert("Continue clicked")}
+                onClick={() => router.push("/analysis")}
               >
                 Continue to Target Analysis
               </motion.button>
